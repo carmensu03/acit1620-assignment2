@@ -1,0 +1,160 @@
+h1{
+    color: #0f4e71;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+#headfont {
+    text-align: center;
+}
+
+main {
+    margin: 2%;
+}
+
+aside{
+    background-color: #f5f5f5;
+    flex-direction: column;
+} 
+
+body {
+    background-color: #e6e6e6;
+    color: #0f4e71;
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+    margin: 0px;
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+#notes {
+    list-style-type: square;
+}
+
+#logo{
+    display: flex;
+    list-style-type: none;
+    margin-right: 4%;
+    justify-content: center;
+}
+
+#click {
+    list-style-type: none; 
+    justify-content: right;
+    flex-direction: row;
+    display: flex;
+}
+
+li {
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    flex-direction: column;
+}
+
+textarea {
+    background-color: #f5f5f5;
+    font-size: .8rem;
+    resize: none;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto;
+    max-width: 100%;
+    height: 25vh;
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid #79A8E9;
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+    border: 1px;
+    line-height: 2.5;
+    padding: 0 20px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;  
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    display: flex;
+    flex-direction: row;  
+    justify-content: right;
+}
+
+.blue {
+    color: white;
+    background-color: #0B5E79;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.purple {
+    color: white;
+    background-color: #200746;
+    display: flex;
+    flex-direction: row;  
+    justify-content: right;
+}
+
+.red {
+    color: white;
+    background-color: #8C3C36;
+}
+
+@media screen and (min-width:600px){
+
+    body{
+        grid-template-columns: 1fr 4fr ;
+        grid-template-rows: auto max-content;
+    }
+
+    aside{
+        height: 100vh;
+        grid-row: 1 / -1;
+    } 
+
+    textarea {
+        grid-column: 2/-1;
+    }
+
+    #top {
+        grid-column: 2/-1;
+        grid-row: 2/1;
+    }
+
+    main {
+        grid-column: 2/-1;
+        grid-row: 1/2;
+    }
+
+    #top div {
+        grid-column: 2/-1;
+        grid-row: 1/2;
+    }
+
+    footer {
+        grid-column: 2/-1;
+        align-self: end;
+    }
+}
