@@ -88,6 +88,7 @@ button {
     font-size: 1rem;
     text-align: center;
     border-radius: 10px;  
+    cursor: pointer;
 }
 
 #top {
@@ -121,6 +122,11 @@ div {
     color: white;
     background-color: #8C3C36;
 }
+
+.grey{
+    background-color: #23272A;
+}
+
 
 @media screen and (min-width:600px){
 
