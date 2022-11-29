@@ -105,16 +105,12 @@ div {
 .blue {
     color: white;
     background-color: #0B5E79;
-    display: flex;
-    flex-direction: row;
     justify-content: left;
 }
 
 .dark {
     color: white;
     background-color: #200746;
-    display: flex;
-    flex-direction: row;  
     justify-content: right;
 }
 
