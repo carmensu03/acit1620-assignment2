@@ -1,6 +1,5 @@
-
-
 const clickMeButton = document.querySelector(".dark");
+
 function changeText()
 {
     if (clickMeButton.textContent === "Dark Theme")
@@ -11,6 +10,5 @@ function changeText()
     {
         clickMeButton.textContent = "Dark Theme"
     }
-        
 }
 clickMeButton.addEventListener("click", changeText)

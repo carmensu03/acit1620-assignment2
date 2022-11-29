@@ -154,11 +154,6 @@ div {
         grid-row: 1/2;
     }
 
-    #top div {
-        grid-column: 2/-1;
-        grid-row: 1/2;
-    }
-
     footer {
         grid-column: 2/-1;
         align-self: end;
