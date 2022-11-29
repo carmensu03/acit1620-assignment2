@@ -145,11 +145,6 @@ div {
         grid-column: 2/-1;
         grid-row: 2/1;
     }
-/* 
-    main {
-        grid-column: 2/-1;
-        grid-row: 1/2;
-    } */
 
     #headfont {
         grid-column: 2/-1;
