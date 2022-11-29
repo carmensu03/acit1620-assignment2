@@ -130,7 +130,7 @@ div {
 
     body{
         grid-template-columns: 1fr 4fr ;
-        grid-template-rows: auto max-content;
+        grid-template-rows: max-content;
     }
 
     aside{
