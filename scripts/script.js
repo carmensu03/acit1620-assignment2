@@ -1,8 +1,16 @@
-const darkButton = document.querySelector(".Dark Theme");
 
-function changeBGColor()
+
+const clickMeButton = document.querySelector(".dark");
+function changeText()
 {
-    // document.body.style.backgroundColor = "pink";
-    document.body.classList.add("grey");
+    if (clickMeButton.textContent === "Dark Theme")
+    {
+        clickMeButton.textContent = "Light Theme";
+    }
+    else 
+    {
+        clickMeButton.textContent = "Dark Theme"
+    }
+        
 }
-darkButton.addEventListener("click",changeBGColor);
+clickMeButton.addEventListener("click", changeText)
