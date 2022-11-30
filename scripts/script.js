@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 const sideNotes = document.querySelector("aside");
 const textArea = document.querySelector("textarea");
 
-function changeText()
+function changeColor()
 {
     if (clickMeButton.textContent === "Dark Theme")
     {
@@ -36,4 +36,4 @@ function changeTextArea()
     textArea.classList.toggle("TextAreaColor");
 }
 
-clickMeButton.addEventListener("click", changeText)
+clickMeButton.addEventListener("click", changeColor)
