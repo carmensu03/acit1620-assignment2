@@ -10,12 +10,13 @@ function changeText()
     }
     else
     {
-        clickMeButton.textContent = "Dark Theme"
+        clickMeButton.textContent = "Light Theme"
         changeBG()
     }
 }
 
-function changeBG() {
+function changeBG() 
+{
     body.classList.toggle("BGcolor");
 }
 
