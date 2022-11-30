@@ -3,12 +3,17 @@ h1{
     text-align: center;
     font-family: 'Roboto Mono', monospace;
 }
+
 #headfont {
     text-align: center;
 }
 
+.BGcolor {
+    background-color: #2C2F33;
+}
+
 main {
-    margin: 2%;
+    margin: 1%;
 }
 
 aside{
