@@ -1,5 +1,6 @@
 const clickMeButton = document.querySelector(".dark");
 const body = document.querySelector("body");
+const sideNotes = document.querySelector("aside");
 
 function changeText()
 {
@@ -7,17 +8,24 @@ function changeText()
     {
         clickMeButton.textContent = "Light Theme";
         changeBG()
+        changeSideNotes()
     }
     else
     {
-        clickMeButton.textContent = "Light Theme"
+        clickMeButton.textContent = "Dark Theme"
         changeBG()
+        changeSideNotes()
     }
 }
 
 function changeBG() 
 {
     body.classList.toggle("BGcolor");
+}
+
+function changeSideNotes() 
+{
+    sideNotes.classList.toggle("SideNotesColor");
 }
 
 clickMeButton.addEventListener("click", changeText)
