@@ -1,6 +1,7 @@
 const clickMeButton = document.querySelector(".dark");
 const body = document.querySelector("body");
 const sideNotes = document.querySelector("aside");
+const textArea = document.querySelector("textarea");
 
 function changeText()
 {
@@ -9,12 +10,14 @@ function changeText()
         clickMeButton.textContent = "Light Theme";
         changeBG()
         changeSideNotes()
+        changeTextArea()
     }
     else
     {
         clickMeButton.textContent = "Dark Theme"
         changeBG()
         changeSideNotes()
+        changeTextArea()
     }
 }
 
@@ -26,6 +29,11 @@ function changeBG()
 function changeSideNotes() 
 {
     sideNotes.classList.toggle("SideNotesColor");
+}
+
+function changeTextArea()
+{
+    textArea.classList.toggle("TextAreaColor");
 }
 
 clickMeButton.addEventListener("click", changeText)

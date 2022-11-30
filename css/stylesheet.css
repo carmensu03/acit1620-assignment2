@@ -134,6 +134,10 @@ div {
     background-color: #2A3C3C
 }
 
+.TextAreaColor {
+    background-color: #2F4141;
+}
+
 @media screen and (min-width:600px){
 
     body{
