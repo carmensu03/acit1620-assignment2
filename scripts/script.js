@@ -7,12 +7,12 @@ function changeColor()
 {
     if (clickMeButton.textContent === "Dark Theme")
     {
-        clickMeButton.textContent = "Light Theme";
+        clickMeButton.textContent = "Light Theme"
         changeBG()
         changeSideNotes()
         changeTextArea()
     }
-    else
+    else if (clickMeButton.textContent = "Light Theme")
     {
         clickMeButton.textContent = "Dark Theme"
         changeBG()
@@ -34,6 +34,11 @@ function changeSideNotes()
 function changeTextArea()
 {
     textArea.classList.toggle("TextAreaColor");
+}
+
+function changeButton()
+{
+
 }
 
 clickMeButton.addEventListener("click", changeColor)

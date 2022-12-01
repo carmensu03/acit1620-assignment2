@@ -127,15 +127,16 @@ div {
 }
 
 .BGcolor {
-    background-color: #263737;
+    background-color: 
+    #282b30;
 }
 
 .SideNotesColor {
-    background-color: #2A3C3C
+    background-color: 	#36393e;
 }
 
 .TextAreaColor {
-    background-color: #2F4141;
+    background-color: #424549;
 }
 
 @media screen and (min-width:600px){
