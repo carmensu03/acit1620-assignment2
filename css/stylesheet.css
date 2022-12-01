@@ -125,22 +125,35 @@ div {
     background-color: #23272A;
 }
 
-.BGcolor {
+.DarkBGcolor {
     background-color: #282b30;
     color: white;
 }
 
-.SideNotesColor {
+.DarkSideNotesColor {
     background-color: 	#36393e;
 }
 
-.TextAreaColor {
+.DarkTextAreaColor {
     background-color: #424549;
     color: white;
 }
 
-.BlueButton {
+.DarkLightButton {
+    background-color: #f2c038;
+}
+
+.DarkBlueButton {
     background-color: #7289da;
+}
+
+.DarkRedButton {
+    background-color: 
+    #d44042;
+}
+
+.DarkLogoColor {
+    filter:invert(50%) brightness(200%);
 }
 
 

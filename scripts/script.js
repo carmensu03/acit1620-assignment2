@@ -3,8 +3,11 @@ const body = document.querySelector("body");
 const sideNotes = document.querySelector("aside");
 const textArea = document.querySelector("textarea");
 const blueButton = document.querySelector(".blue");
+const imgLogo = document.querySelector("img");
+const lightButton = document.querySelector(".dark");
+const redButton = document.querySelector(".red");
 
-function changeColor()
+function changeColor() 
 {
     if (clickMeButton.textContent === "Light Theme")
     {
@@ -20,10 +23,13 @@ function changeColor()
 
 function changeTheme() 
 {
-    body.classList.toggle("BGcolor");
-    sideNotes.classList.toggle("SideNotesColor");
-    textArea.classList.toggle("TextAreaColor");
-    blueButton.classList.toggle("BlueButton");
+    body.classList.toggle("DarkBGcolor");
+    sideNotes.classList.toggle("DarkSideNotesColor");
+    textArea.classList.toggle("DarkTextAreaColor");
+    blueButton.classList.toggle("DarkBlueButton");
+    imgLogo.classList.toggle("DarkLogoColor");
+    lightButton.classList.toggle("DarkLightButton");
+    redButton.classList.toggle("DarkRedButton");
 }
 
 clickMeButton.addEventListener("click", changeColor)
