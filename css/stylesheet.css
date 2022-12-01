@@ -126,8 +126,7 @@ div {
 }
 
 .BGcolor {
-    background-color: 
-    #282b30;
+    background-color: #282b30;
 }
 
 .SideNotesColor {
@@ -139,8 +138,9 @@ div {
     color: white;
 }
 
-.HeaderColor {
-    color: white;
+.BlueButton {
+    background-color: #7289da;
+    color: black;
 }
 
 @media screen and (min-width:600px){

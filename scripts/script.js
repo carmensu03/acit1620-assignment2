@@ -2,7 +2,7 @@ const clickMeButton = document.querySelector(".dark");
 const body = document.querySelector("body");
 const sideNotes = document.querySelector("aside");
 const textArea = document.querySelector("textarea");
-const button = document.querySelector(".blue")
+const blueButton = document.querySelector(".blue");
 
 function changeColor()
 {
@@ -41,7 +41,7 @@ function changeTextArea()
 
 function changeButtonColor()
 {
-    button.classList.toggle("blue");
+    blueButton.classList.toggle("BlueButton");
 }
 
 clickMeButton.addEventListener("click", changeColor)
