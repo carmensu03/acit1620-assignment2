@@ -9,38 +9,20 @@ function changeColor()
     if (clickMeButton.textContent === "Light Theme")
     {
         clickMeButton.textContent = "Dark Theme"
-        changeBG()
-        changeSideNotes()
-        changeTextArea()
-        changeButtonColor()
+        changeTheme()
     }
     else if (clickMeButton.textContent = "Dark Theme")
     {
         clickMeButton.textContent = "Light Theme"
-        changeBG()
-        changeSideNotes()
-        changeTextArea()
-        changeButtonColor()
+        changeTheme()
     }
 }
 
-function changeBG() 
+function changeTheme() 
 {
     body.classList.toggle("BGcolor");
-}
-
-function changeSideNotes() 
-{
     sideNotes.classList.toggle("SideNotesColor");
-}
-
-function changeTextArea()
-{
     textArea.classList.toggle("TextAreaColor");
-}
-
-function changeButtonColor()
-{
     blueButton.classList.toggle("BlueButton");
 }
 
