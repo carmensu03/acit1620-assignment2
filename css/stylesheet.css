@@ -107,7 +107,6 @@ div {
 .blue {
     color: white;
     background-color: #0B5E79;
-
     justify-content: left;
 }
 
@@ -137,6 +136,7 @@ div {
 
 .TextAreaColor {
     background-color: #424549;
+    color: white;
 }
 
 .HeaderColor {
