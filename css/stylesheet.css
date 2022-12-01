@@ -134,7 +134,7 @@ div {
     background-color: 	#36393e;
 }
 
-.DarkTextAreaColor {
+.DarkTextArea {
     background-color: #424549;
     color: white;
 }
@@ -150,6 +150,10 @@ div {
 .DarkRedButton {
     background-color: 
     #d44042;
+}
+
+.ClearItems{
+    display: none;
 }
 
 .DarkLogoColor {
