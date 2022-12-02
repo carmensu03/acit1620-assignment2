@@ -2,11 +2,11 @@ const clickMeButton = document.querySelector(".dark");
 const body = document.querySelector("body");
 const sideNotes = document.querySelector("aside");
 const textArea = document.querySelector("textarea");
-const blueButton = document.querySelectorAll(".blue");
-const imgLogo = document.querySelectorAll("img");
+const hideItems = document.querySelector("ClearItems");
 const lightButton = document.querySelector(".dark");
 const redButton = document.querySelector(".red");
-const hideItems = document.querySelector("ClearItems")
+const blueButton = document.querySelectorAll(".blue");
+const imgLogo = document.querySelectorAll("img");
 
 function changeColor() 
 {
