@@ -125,6 +125,10 @@ div {
     background-color: #23272A;
 }
 
+.DarkHeader {
+    color: white;
+}
+
 .DarkBGcolor {
     background-color: #282b30;
     color: white;

@@ -7,6 +7,7 @@ const lightButton = document.querySelector(".dark");
 const redButton = document.querySelector(".red");
 const blueButton = document.querySelectorAll(".blue");
 const imgLogo = document.querySelectorAll("img");
+const headFont = document.querySelectorAll("h1");
 
 function changeColor() 
 {
@@ -34,6 +35,9 @@ function changeTheme()
     };
     for (let image of imgLogo) {
         image.classList.toggle("DarkLogoColor");
+    };
+    for (let head of headFont) {
+        head.classList.toggle("DarkHeader");
     };
 }
 
