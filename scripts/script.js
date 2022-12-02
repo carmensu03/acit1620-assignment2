@@ -4,7 +4,8 @@ const sideNotes = document.querySelector("aside");
 const textArea = document.querySelector("textarea");
 const hideItems = document.querySelector("ClearItems");
 const lightButton = document.querySelector(".dark");
-const redButton = document.querySelector(".red");
+const cancelButton = document.querySelector(".red");
+const saveButton = document.querySelector(".blue.save");
 const blueButton = document.querySelectorAll(".blue");
 const imgLogo = document.querySelectorAll("img");
 const headFont = document.querySelectorAll("h1");
@@ -29,7 +30,7 @@ function changeTheme()
     sideNotes.classList.toggle("DarkSideNotesColor");
     textArea.classList.toggle("DarkTextArea");
     lightButton.classList.toggle("DarkLightButton");
-    redButton.classList.toggle("DarkRedButton");
+    cancelButton.classList.toggle("DarkRedButton");
     for (let blue of blueButton) {
         blue.classList.toggle("DarkBlueButton");
     };
@@ -42,3 +43,13 @@ function changeTheme()
 }
 
 clickMeButton.addEventListener("click", changeColor)
+
+function removeButton() 
+{
+    saveButton.classList.toggle("ClearItems");
+    cancelButton.classList.toggle("ClearItems");
+    textArea.classList.toggle("ClearItems");
+    textArea.value = "";
+}
+
+cancelButton.addEventListener("click", removeButton)
