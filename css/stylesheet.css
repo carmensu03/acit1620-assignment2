@@ -145,6 +145,7 @@ div {
 
 .DarkLightButton {
     background-color: #f2c038;
+    color: black;
 }
 
 .DarkBlueButton {
@@ -152,8 +153,7 @@ div {
 }
 
 .DarkRedButton {
-    background-color: 
-    #d44042;
+    background-color: #d44042;
 }
 
 .ClearItems{
