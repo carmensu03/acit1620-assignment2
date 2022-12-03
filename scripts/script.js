@@ -4,6 +4,7 @@ const sideNotes = document.querySelector("aside");
 const textArea = document.querySelector("textarea");
 const hideItems = document.querySelector("ClearItems");
 const lightButton = document.querySelector(".dark");
+const newNoteButton = document.querySelector(".blue.newnote");
 const cancelButton = document.querySelector(".red");
 const saveButton = document.querySelector(".blue.save");
 const blueButton = document.querySelectorAll(".blue");
@@ -53,3 +54,14 @@ function removeButton()
 }
 
 cancelButton.addEventListener("click", removeButton)
+
+function newNote() 
+{
+    if (cancelButton.classList.contains("ClearItems"))
+    {
+        removeButton();
+        textArea.setAttribute("placeholder", "Type your new note:");
+    }
+}
+
+newNoteButton.addEventListener("click", newNote)
