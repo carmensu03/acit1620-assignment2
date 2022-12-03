@@ -100,3 +100,18 @@ function displayNote (event)
 }
 sideNotes.addEventListener("click",displayNote);
 
+function saveNote() {
+    let title=""
+    title = prompt("Save this note as");
+    myNotesArray.push(
+        {
+            title: title,
+            body: textArea.value
+        }
+    );
+    const noteItem = document.createElement("li");
+    noteItem.textContent = title;
+    noteList.appendChild(noteItem);
+}
+
+saveButton.addEventListener("click", saveNote)
