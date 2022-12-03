@@ -10,6 +10,7 @@ const saveButton = document.querySelector(".blue.save");
 const blueButton = document.querySelectorAll(".blue");
 const imgLogo = document.querySelectorAll("img");
 const headFont = document.querySelectorAll("h1");
+const noteList = document.querySelector("#notes");
 
 function changeColor() 
 {
@@ -62,7 +63,17 @@ function newNote()
         removeButton();
         textArea.setAttribute("placeholder", "Type your new note:");
     }
-}
+    else if (textArea.hasAttribute("placeholder")) 
+    {
+        textArea.removeAttribute("placeholder");
+        textArea.value = "";
+    }
+    else 
+    {
+        textArea.setAttribute("placeholder", "Type your new note:");
+        textArea = "";
+    }
+};
 
 newNoteButton.addEventListener("click", newNote)
 
@@ -75,5 +86,17 @@ let myNotesArray = [
         title: "note two",
         body: "this is my second note"
     },
-]
+];
+
+function displayNote (event) 
+{
+    for (let item of myNotesArray)
+    {
+        if (item.title == event.target.textContent)
+        {
+            textArea.value = note.body;
+        }
+    };
+}
+sideNotes.addEventListener("click",displayNote);
 
