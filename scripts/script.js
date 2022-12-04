@@ -94,13 +94,15 @@ function displayNote (event)
     {
         if (item.title == event.target.textContent)
         {
-            textArea.value = note.body;
+            textArea.value = item.body;
         }
     };
-}
+};
+
 sideNotes.addEventListener("click",displayNote);
 
-function saveNote() {
+function saveNote() 
+{
     let title=""
     title = prompt("Save this note as");
     myNotesArray.push(
